@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="Description" content="Это сайт цветочного магазина 'Цветочник'. Представлен каталог букетов и композиций. Дважды в неделю доставляют цветы из Эквадора и Голландии для поддержания постоянного ассортимента свежих цветов. Также пополняется ассортимент и привозятся новые цветы в Могилев. Принимаются все способы оплаты, предоставляется бесплатная доставка. На сайте указаны контактные данные, график работы и ссылки для получения помощи.">
+	<meta name="keywords" content="цветочный магазин, букеты, композиции из цветов, доставка цветов, свежие цветы, каталог цветов">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="icon" href="assets/1643614610_1-papik-pro-p-tsvetok-logotip-1-transformednew.ico" type="image/x-icon">
+	<title>Цветочник</title>
+</head>
+<body>
+	<header class="header">
+		<div class="wrapper">
+		<div class="header_wrapper">		
+			<div class="header_logo">
+				<img width="150" height="70" src="assets/1643614610_1-papik-pro-p-tsvetok-logotip-1-transformednew.png" alt="#">
+				<p>Цветочник</p>
+			</div>
+		<nav>
+			<div class="nav">
+			<ul class="header_list">
+				<li class="header_item"><a href="/catalog" class="header_link">Каталог</a></li>
+				<li class="header_item"><a href="/bouquets" class="header_link">Букеты</a></li>
+				<li class="header_item"><a href="/compositions" class="header_link">Композиции</a></li>
+			</ul>
+			<div class="search">
+				<form action="/submit-search" class="search_area">
+					<input type="text" class="search_area">
+					<button class="search_button">Найти</button>
+				</form>
+			</div>
+			</div>
+		</nav>
+				<div class="header_burger">
+				<span class="burger_line burger_line_first"></span>
+				<span class="burger_line burger_line_second"></span>
+				<span class="burger_line burber_line_third"></span>
+			</div>
+		</div>
+		</div>
+	</header>
+	<main>	
+		<div class="wrapper">
+		<div class="content">	
+				<div class="articles">
+					<div class="article">
+						<div class="article_pic">
+							<img height="350" width="350" src="assets/photo5449730160917074970y1961-vau-500w.png" alt="#">
+						</div>
+						<div class="article_text">
+								<p>	Дважды в неделю к нам доставляют цветы из <span>Эквадора</span> и <span>Голландии</span>, чтобы в нашем магазине всегда был большой выбор позиций и свежих цветов.</p>
+								<div class="article_button">
+										<button id="art1_button">Подробнее</button>	
+								</div>	
+							</div>
+						
+					</div>
+					<div class="article">	
+					<div class="article_pic">
+							<img height="350" width="350" src="assets/photowhite.png" alt="#">
+						</div>
+						<div class="article_text">
+								<p>	Постоянно дополняем ассортимент и привозим новые виды цветов в <span>Могилев</span>, которые вы можете найти только у нас.</p>
+								<div class="article_button">
+										<button id="art2_button">Подробнее</button>	
+								</div>	
+							</div>
+						</div>
+				</div>
+			<div class="aside">	
+				<div class="box">
+					<p>Бесплатная доставка</p>
+				</div>
+				<div class="box">
+					<p>Принимаем любые способы оплаты</p>
+				</div>
+				<div class="email_submit">
+					<form action="/submit-email" class="email_submit">
+						<input placeholder="Ваш почтовый адрес" type="text" class="email_submit_input">
+						<button class="email_submit_button">Подписаться</button>
+					</form>
+				</div>
+			</div>		
+		</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer_item">
+				<div class="footer_logo">
+				<img width="150" height="70" src="assets/1643614610_1-papik-pro-p-tsvetok-logotip-1-transformednew.png" alt="#">
+				<p>Цветочник</p>
+				</div>
+				<div class="footer_info">
+					<div class="help_info">
+						<ul class="footer_info_list">
+							<li class="footer_info_item"><h3>Помощь</h3></li>
+							<li class="footer_info_item"><a href="/payments">Способы оплаты</a></li>
+							<li class="footer_info_item"><a href="/delivery">Доставка</a></li>
+							<li class="footer_info_item"><a href="/shops">Наши магазины</a></li>
+						</ul>
+					</div>
+					<div class="contacts_info">
+						<ul class="footer_info_list">
+							<li class="footer_info_item"><h3>Контакты</h3></li>
+							<li class="footer_info_item">+375(44)5351879</li>
+							<li class="footer_info_item">exrmple@yandex.by</li>
+						</ul>						
+					</div>
+					<div class="schedule_info">
+						<ul class="footer_info_list">
+							<li class="footer_info_item"><h3>График работы</h3></li>
+							<li class="footer_info_item">Ежедневно</li>
+							<li class="footer_info_item">08:00 - 21:00</li>
+						</ul>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+		<script>
+		document.getElementById("art1_button").addEventListener("click", function() {
+  window.location.href = "/article1";});
+		document.getElementById("art2_button").addEventListener("click", function() {
+  window.location.href = "/article2";});
+	</script>
+</body>
+</html>
